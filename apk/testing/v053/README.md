@@ -1,5 +1,16 @@
 # v053 Android 远程测试包
 
+## 版本对齐测试版 0.5.3（4005）
+
+[下载 0.5.3 测试版](https://assets.debug-anywhere.com/apk/testing/v053/DebugAnywhere-0.5.3-4005-backup-import-test-signed.apk?build=4005)
+
+- 与 iOS 对外版本统一为 0.5.3；后续同一版本测试仅递增内部构建号。Android 按 versionCode 判断升级，4005 高于历史 4001–4004；展示版本变化不要求卸载或清数据。
+- 与下方 4002–4004 使用同一测试证书，已在 Android 10 从 4.0.3（4004）覆盖安装，四项配置存储逐项一致；离线启动、Release 无 E2E 控件、顶层备份入口、真实网页及调试工具通过。测试数据已恢复。
+- 功能与下方 4004 一致，支持 Android 10+，target API 36，四种 ABI，R8 Release，约 69 MB。最终包未重新验证 Android 15 / 16 或 MIUI 真机。
+- 备份与导入需要 Pro；JSON 未加密，可能包含敏感 Headers、地址及脚本。历史、Cookie、购买信息和 App 设置不进入备份，导入不执行脚本或刷新网页。
+- 仅供测试，无法覆盖签名不同的正式渠道版本；保留现有正式版及数据，不替换正式下载入口。
+- SHA256：`13764d2ccf0cd5c7b1ba1644cd3dba4c214e06a8d397235f392b7cc3773df87c`。
+
 ## 备份与导入测试版 4.0.3（4004）
 
 [下载 4.0.3 备份与导入测试版](https://assets.debug-anywhere.com/apk/testing/v053/DebugAnywhere-4.0.3-4004-backup-import-test-signed.apk)
